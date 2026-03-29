@@ -1,0 +1,26 @@
+[6us] p s p s p s p
+[8wuf] p f p f p f
+[qf] s f s f s f s
+[9eid] s d s d s d s
+[6us] p s p s p s p
+[8wuf] p f p f p f
+[qf] s f s f s f s
+[9eid] s d s d
+u o o u o [6tp]
+u e 0 e 0 u e u p [8uo]
+t w t [wu] u t i [4pu]
+t q 8 q [8t] t q t u [2qez]
+9 6 9 u o u o [6tp]
+u e 0 e 0 u e p [8uo]
+t w t [wu] u t i [u4]
+t 8 q [8t] t q t u [2q]
+9 6 9
+o p a [4us] [az] [tp] o o o t p [tzo] 2 |
+[dz] [ts] [6eosh] 0 [eosh] 0 [eosh] [ig] [uf] [ig]
+[tofh] w [tofh] w [zofh] [tg] [rf] [tg]
+[4qpf] 8 [qps] 8 [qd] s p s [id]
+[29] 6 9 6 9
+[ts] [dz] [ts]
+[6eosh] 0 [eosh] 0 [eosh] [osg] [osf] [sg] [osh] [8t] w [tosh] w [tosh] [osg] [osf] g [pf]
+[4qpf] 8 [qps] 8 [qd] s p s [id]
+[29] 6 9 6 [9if] d d s [su]

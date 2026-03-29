@@ -1,0 +1,110 @@
+[te60]||[te60]||
+[wut81]||[wut81]||
+[qe84]|||
+[te60]||[te60]||
+[wut81]||[wt81]||
+[wr95]|||
+y u [yie92]||[yie92]||
+[ute6]||[ute6]||
+[wur30]||[wur30]||
+[ute6]||[ute6]||
+[ute6]||[ute6]||
+[wur30]||[wur30]||
+[ute86]|||
+[ute60]||[ye60]||t
+[wut8]||[yw8]||
+[yqe84] [te]|||
+[ute60]||[ye60]||[te]
+[wut8]||[yw8]||t
+[ywr95]|||
+y u [yie9]||[ue9]||y
+[ute60]||[e60] y t
+[wur730]||[ywr730]||t
+[ute60]||[60] e t
+[ute60]||[ye60]||t
+[wur730]||[ywr]||
+[t860] e|||
+[ut6] 0 e [y6] 0 [te]
+[wut1] 5 8 [yw1] 5 8
+[ye4] [te8] q 4 8 q
+4 8 q 4 8 [yq]
+[ut6] 0 e [y6] 0 [te]
+[wut1] 5 8 [yw1] 5 8
+[yr5] 9 w 5 9 w
+5 9 w 5 [y9] [wu]
+[yie2] 6 9 2 [u6] [y9]
+[ut6] 0 e 6 [y0] [te]
+[ur3] 7 0 3 [y7] [t0]
+[ut6] 0 e 6 [e0] [te]
+[ut6] 0 e [y6] 0 [te]
+[yr3] 7 0 [ur3] 7 0
+[ute60]||[e60]||
+[e60]||[e60] p s
+[spf6] 0 e 6 [pd0] [spe]
+[sof8] w t [od8] w t
+[si4] [pi8] q 4 8 q
+4 8 q 4 [p8] [sq]
+[spf6] 0 e 6 [pd0] [spe]
+[sof8] w t [od8] w t
+[oda5] 9 w 5 9 w
+5 9 w 5 [od9] [wof]
+[pgd9] e y 9 [pfe] [ypd]
+[spf6] 0 e 6 [pd0] [spe]
+[fa0] r u 0 [rda] [us]
+[spf6] 0 e 6 [p0] [spe]
+[spf6] 0 e 6 [pd0] [spe]
+[fa0] r u [da0] r u
+[us6] [up0] e [up6] 0 e
+[up60] [60] [60] [up60] [60] [60]
+[ute6] [e6] [e6] [e6] [ye6] [te6]
+[ut8] [t8] [t8] [yt8] [t8] [t8]
+[tq4] [qe4] [q4] [q4] [q4] [q4]
+[q4] [q4] [q4] [q4] [q4] [q4]
+[ute6] [e6] [e6] [e6] [ye6] [te6]
+[ut8] [t8] [t8] [yt8] [t8] [t8]
+[ywr5] [w5] [w5] [w5] [w5] [w5]
+[w5] [w5] [w5] [w5] [woda5] [wofa5]
+[ypgd9] [y9] [y9] [y9] [ypf9] [ypd9]
+[spfe6] [e6] [e6] [e6] [ped6] [spe6]
+[ufa0] [u0] [u0] [u0] [uda0] [us0]
+[spfe6] [e6] [e6] [e6] [pe6] [se6]
+[spfe6] [e6] [e6] [ped6] [e6] [spe6]
+[ofa30] [30] [30] [oda30] [30] [30]
+[utpe6] [e6] [e6] [e6] [e6] [e6]
+[e6] [e6] [e6] [e6] [e6] [e6]
+[ute60]||y||t
+[ut]||y||
+[yqe84] [te]|||
+[ute60]||y||t
+[ut]||y||
+[ywr95]|||
+[yr] u [yqie9]||[qe9] u y
+[ute60]||[e60] [ye] t
+[ur730]||[730] [yr] t
+[ute60]|||y t
+[ute60]||[ye60]||t
+[ur730]||[yr]||
+[te860] e|||
+[spfe6] [e6] [e6] [e6] [ped6] [spe6]
+[tsof8] [t8] [t8] [tod8] [t8] [t8]
+[sqi4] [qpi4] [q4] [q4] [q4] [q4]
+[q4] [q4] [q4] [q4] [qp4] [sq4]
+[spfe6] [e6] [e6] [e6] [ped6] [spe6]
+[tsof8] [t8] [t8] [tod8] [t8] [t8]
+[woda5] [w5] [w5] [w5] [w5] [w5]
+[w5] [w5] [w5] [w5] [woda5] [wofa5]
+[ypgd9] [y9] [y9] [y9] [ypf9] [ypd9]
+[spfe6] [e6] [e6] [e6] [ped6] [spe6]
+[ofa30] [30] [30] [30] [od30] [so30]
+[spfe6] [e6] [e6] [e6] [pe6] [se6]
+[spfe6] [e6] [e6] [ped6] [e6] [spe6]
+[ofa30] [30] [30] [oda30] [30] [30]
+[utpe6] [e6] [e6] [e6] [e6] [e6]
+[e6] [e6] [e6] [e6] [ped6] [pfe6]
+[ypgd9] [y9] [y9] [y9] [ypf9] [ypd9]
+[spfe6] [e6] [e6] [e6] [ped6] [spe6]
+[ofa30] [30] [30] [30] [od30] [so30]
+[spfe6] [e6] [e6] [e6] [pe6] [se6]
+[spfe6] [e6] [e6] [ped6] [e6] [spe6]
+[ofa30] [30] [30] [oda30] [30] [30]
+[utpe6]

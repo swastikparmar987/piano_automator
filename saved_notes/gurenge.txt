@@ -1,0 +1,18 @@
+[o8] I o||
+[o9] I o||
+[o0] I u| y y 7||r|y
+[u8]||u|o
+[p9]||o|p
+[a0] 0 0 0 0 0 0 0 0|y|y|a|
+[p8] a d a p aa o
+[p9] a d a p ao y
+[y0] oo y y o p o
+[d7]|s|a p o
+[o8]| o o p a
+[(p]| p p a d
+[a0] 9 0|9 0||y|y|a|
+[p8] a d a p aa o
+[p9] a d a p ao o
+[(o]|p a|a h G 0 d|a|p|o
+[o8]| o o p a
+[p9]| p p|a|0 9 0|9 [ua0] [ua0]

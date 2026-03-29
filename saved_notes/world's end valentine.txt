@@ -1,0 +1,183 @@
+[y2] [i4] [p6] [d9] [je] [p6] [fSW*] [u0]
+
+[fh0*] [y2] [i4] [p6] [gq] [je] [p6] [hJw9]
+
+[P^] [h5] [j6] [h5] [y2] [i4] [p6] [gq]
+
+[je] [p6] [ho!] 3 [f5] 3 [p6] [T!]
+
+[u3] [S*] f [dy^4] [y2] [i4] [hw] [f0]
+
+[PS*!] [Sf] [Jf03] [gdp2] 9 6 2 !
+
+* 6 ! 2 9 6 2 !
+
+* 6 ! [j2] g [d9] g [d6]
+
+g [d2] g [j!] g [d*] g [d6]
+
+g [d!] g [j2] g [d9] g [d6]
+
+g [d2] g [j!] g [d*] g [d6]
+
+g [d!] g [jd29] g [d9] g [d6]
+
+g [d2] g [jd!*] g [d*] g [d6]
+
+g [d!] g [jd29] g [d9] g [d6]
+
+g [d2] g [jd!*] g [d*] g [d6]
+
+g [d!] g [y9] [pe] [OW] [pe] [PE]
+
+[st] [PE] [pe] O p [gw] [dq] [h0]
+
+[ipd9] 2 4 6 9 6 4 2
+
+[uoS*] 3 % * 0 * % 3
+
+[pif9] 2 4 6 9 6 4 2
+
+[uoS*] 3 % * 0 * % 3
+
+[dpi9] 2 4 6 9 6 4 2
+
+[uoS*] 3 % * 0 * % 3
+
+[hSp9] 2 4 6 [gSp9] 6 4 2
+
+[fPo9] 2 5 ^ [oPS9] ^ 5 2
+
+[dpi9] 2 4 6 9 6 4 2
+
+[uoS*] 3 % * 0 * % 3
+
+[fip9] 2 4 6 9 6 4 2
+
+[dPo9] 3 5 ^ 9 ^ [d5] f
+
+[g3] h [Jgd9] 2 4 ^ 9 ^
+
+4 2 [jfS*] ! 3 6 * 6
+
+3 ! [lst] [PJE] [jpe] [OHW] [pje] [JPE]
+
+[dzy] [pje] [hJz9] 2 5 ^ 9 ^
+
+5 2 9 2 5 ^ [hd9] ^
+
+5 2 [Jgs8] 1 4 6 8 6
+
+4 1 [gjl8] 1 4 6 8 6
+
+4 1 [hJz9] 2 5 ^ 9 ^
+
+5 2 9 2 5 ^ [x9] ^
+
+[z5] 2 [jlg8] 1 4 6 8 6
+
+4 1 [gjs8] 1 4 6 8 6
+
+4 1 [Jg^] E [fh5] w [jf6] e
+
+[gs4] q [HD%] W [gJ^] E [hl8] t
+
+[fj6] e [lHD8] 1 @ % 8 %
+
+@ 1 [gHz8] 1 @ % 8 %
+
+@ 1 [H*] ! [P3] 6 [g*] 6
+
+[P3] ! [f*] ! [P3] 6 [d*] 6
+
+[P3] ! [92] [y6] [p2] P [s6] p
+
+[d!] [d6] p ! p [P6] p [y2]
+
+i [p6] i [p2] d [p6] d [h3]
+
+[h7] g 3 f [d7] f [y2] [i6]
+
+[p2] [i6] p [d!] g [d6] S [p!]
+
+[S6] p [y2] i [p6] i [d2] p
+
+[i6] y [i5] p [dg59] [fS5] [dg59] 2
+
+y [i9] y [p2] y [u9] i !
+
+y [i*] y [d!] y [u*] i 2
+
+y [i9] y [p2] y [i9] y [d3]
+
+y [i0] y [P3] y [u0] i 2
+
+y [i9] y [p2] y [u9] i !
+
+y [i*] y [dg!] y [u*] i 2
+
+y [u9] y [i2] y [o9] i [p5]
+
+o [Pw] p [P5] s [pw] d [p^]
+
+d [PE] o [P^] o [iE] y [T6]
+
+u [oe] p [S6] f [he] j [JP2]
+
+[JP9] [jp] 2 [h9] [g3] [g0] [f3] [f0]
+
+g [iydP9] 2 6 9 q e E
+
+e E e q 9 [siyq] 9 [iyPq]
+
+9 [puTe] 0 [dye] 0 [fue] 0 [dye]
+
+0 [gie] 0 [fue] 0 [dye] 0 [fue]
+
+0 [iydP9] 2 6 9 q e E
+
+e E e q 9 [siyq] 9 [iyPq]
+
+9 [Spue6] [PiyE^] [pue6] [iPE^] [Sp*T] [Pfu0] [dpi9]
+
+e [yi] e [yp] e [yi] e 9
+
+e [yi] e [yp] e [yi] e [jgd9]
+
+e [yi] e [yp] e [yi] e 9
+
+e [yi] e [fyp] g [fe] g [fyi]
+
+[de] [Sp9] e [dpyi] e [dgyp] e [gjyi]
+
+e [S*] [fw] [hTu] w [fhJTo] [hw] j
+
+[hTu] [gw] [d9] [ge] [jyi] e z [lyp]
+
+[Je] [jyi] [he] [S*] f [hw] f [hTu]
+
+[jw] [JPy] [jw] [goy] [fw] [d9] [fe] [hyi]
+
+[fe] g [jyp] [he] [gyi] [fe] * [fw]
+
+[hTu] [fw] [JSTo] w [jSTu] w 9 [ge]
+
+[jyi] [ge] h [jyp] [he] [gyi] [fe] *
+
+[fw] [hTu] [fw] [hlTo] w [hJTu] [y2] u
+
+[i4] u [o69] p [i2] p [u69] p
+
+[o2] p [i69] p [i2] u [T!] y
+
+[u3] y [i6*] y [o!] y [P6*] y
+
+[s!] y [P6*] y [p!] y [d2] S
+
+[P4] p [o69] i [o2] p [P69] o
+
+[S2] o [d69] o [P2] o [iyd!] 4
+
+[*%] ! [gSi%*] ! [%*] ! [dgjp9] 6
+
+[py9] 6 [yP9] 6 [yP9] 6 [ys9] 6

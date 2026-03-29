@@ -1,0 +1,44 @@
+f f f| f f f|
+H f f d s d f|
+f f f| f f f|
+f d s d s p p|
+f f f| f f f|
+H f f d s d f|
+f f f| f f f|
+f d s d s p p|
+e| t| e| t|
+e| t| e| w|
+[ef] f [tf]| [ef] f [tf]|
+[eH] f [tf] d [es] d [wf]|
+[ef] f [tf]| [ef] f [tf]|
+[ef] d [ws] d [es] p [0p]|
+[ef] f [tf]| [ef] f [tf]|
+[eH] f [tf] d [es] d [wf]|
+[ef] f [tf]| [ef] f [tf]|
+[ef] d [ws] d [es] p [0p]|
+j k j k j k j k
+j k j k j k j k
+j k j k j k j k
+j k j k j k j k
+[efj]gGHj 0| |0|
+[el]xb| 0| |0|
+[ef]gGHj 0| |0|
+e| [jb] [hv] [fx] [dz] [0sl] [ak]
+[ej]| [0j] k [tl]| [8k] l
+[wz] lzl[9k] j [8h]| 0|
+[9z]| e l [yk]| [9j] [0k]
+[ql] k [yl] z [tx]| w|
+[epj]| [0pj] [ak] [tsl]| [8ak] [sl]
+[wdz] [sl] [9ak] [pj] [8oh]| w|
+[9dz]| Q [sl] [eak]| [9pj] [ak]
+[qsl] [ak] [qsl] [dz] [0fx]| r|
+0| 7| 0| r|
+0|||
+x x x| x x x|
+V x x z l z x|
+x x x| x x x|
+x z l z l j j|
+[uf] [uf] [uf]| [uf] [uf] [uf]|
+[oH] [uf] [uf] [yd] [ts] [yd] [uf]|
+[uf] [uf] [uf]| [uf] [uf] [uf]|
+[uf] [yd] [ts] [yd] [ts] [ep] [ep]
