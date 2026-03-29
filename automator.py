@@ -11,6 +11,10 @@ import json
 from tkinter import simpledialog, messagebox
 from Quartz.CoreGraphics import CGEventCreateKeyboardEvent, CGEventPost, kCGHIDEventTap
 
+# ─── Performance: disable pyautogui's default 0.1s pause between calls ───
+pyautogui.PAUSE = 0
+pyautogui.FAILSAFE = False
+
 # ─── Path Resolution (works both in dev and PyInstaller .app) ───
 if getattr(sys, 'frozen', False):
     # Running as bundled app — use ~/Documents for user-writable songs
@@ -70,10 +74,15 @@ MAC_KEYCODES = {
     '\'': 39, 'k': 40, ';': 41, '\\': 42, ',': 43, '/': 44, 'n': 45, 'm': 46, '.': 47, ' ': 49
 }
 
+# ─── Pre-compiled Regexes (avoid recompiling every call) ─────
+_RE_PARSE = re.compile(r'\[.*?\]|[a-zA-Z0-9!@#\$%\^\&\*\(\)]|\|| ')
+_RE_CHORD = re.compile(r'\[.*?\]')
+_RE_PAUSE = re.compile(r'\|')
+_RE_SINGLE = re.compile(r'(?<!\[)[a-zA-Z0-9!@#\$%\^\&\*\(\)](?!\])')
+
 # ─── Parsing ─────────────────────────────────────────────────
 def parse_input(text):
-    pattern = re.compile(r'\[.*?\]|[a-zA-Z0-9!@#\$%\^&\*\(\)]|\|| ')
-    chunks = pattern.findall(text)
+    chunks = _RE_PARSE.findall(text)
     result, positions = [], []
     index = 0
     for chunk in chunks:
@@ -90,24 +99,35 @@ def parse_input(text):
         positions.append((start, end))
     return result, positions
 
-# ─── Editor Highlighting ─────────────────────────────────────
+# ─── Editor Highlighting (debounced — 150ms delay) ───────────
+_highlight_pending = None
+
+def _do_highlight():
+    """Actual highlighting work — runs only after 150ms of no typing."""
+    global _highlight_pending
+    _highlight_pending = None
+    try:
+        inputbox.tag_remove("chord", "1.0", "end")
+        inputbox.tag_remove("single", "1.0", "end")
+        inputbox.tag_remove("pause", "1.0", "end")
+        
+        text = inputbox.get("1.0", "end")
+        
+        for match in _RE_CHORD.finditer(text):
+            inputbox.tag_add("chord", f"1.0 + {match.start()} chars", f"1.0 + {match.end()} chars")
+        for match in _RE_PAUSE.finditer(text):
+            inputbox.tag_add("pause", f"1.0 + {match.start()} chars", f"1.0 + {match.end()} chars")
+        for match in _RE_SINGLE.finditer(text):
+            inputbox.tag_add("single", f"1.0 + {match.start()} chars", f"1.0 + {match.end()} chars")
+    except Exception:
+        pass
+
 def on_text_changed(event=None):
-    inputbox.tag_remove("chord", "1.0", "end")
-    inputbox.tag_remove("single", "1.0", "end")
-    inputbox.tag_remove("pause", "1.0", "end")
-    
-    text = inputbox.get("1.0", "end")
-    
-    for match in re.finditer(r'\[.*?\]', text):
-        inputbox.tag_add("chord", f"1.0 + {match.start()} chars", f"1.0 + {match.end()} chars")
-        
-    for match in re.finditer(r'\|', text):
-        inputbox.tag_add("pause", f"1.0 + {match.start()} chars", f"1.0 + {match.end()} chars")
-        
-    for match in re.finditer(r'(?<!\[)[a-zA-Z0-9!@#\$%\^&\*\(\)](?!\])', text):
-        start = f"1.0 + {match.start()} chars"
-        if not inputbox.tag_names(start):
-            inputbox.tag_add("single", start, f"1.0 + {match.end()} chars")
+    """Debounced: schedules highlighting 150ms from now, cancels previous."""
+    global _highlight_pending
+    if _highlight_pending is not None:
+        root.after_cancel(_highlight_pending)
+    _highlight_pending = root.after(150, _do_highlight)
 
 # ─── Humanizer Engine & Playback ────────────────────────────────
 def direct_tap(char, hold_duration):
@@ -181,26 +201,43 @@ def format_note(note):
     elif note['type'] == 'pause': return '|'
     return ''
 
-def update_progress():
+_last_progress_update = 0
+
+def update_progress(force=False):
+    """Throttled UI update — max ~30fps during playback to avoid lag."""
+    global _last_progress_update
+    now = time.monotonic()
+    if not force and (now - _last_progress_update) < 0.033:  # ~30fps cap
+        return
+    _last_progress_update = now
+    
     total = len(notes_list)
     if total == 0:
-        progress_bar.set(0); mini_progress_bar.set(0)
+        progress_bar.set(0)
         progress_label.configure(text="0 / 0")
         now_playing_label.configure(text="—")
-        mini_now_playing.configure(text="—")
+        if is_mini_mode:
+            mini_progress_bar.set(0)
+            mini_now_playing.configure(text="—")
         return
     
     prog = current_index / total
-    progress_bar.set(prog); mini_progress_bar.set(prog)
+    progress_bar.set(prog)
     progress_label.configure(text=f"{current_index} / {total}")
     
     if current_index < total:
         note_str = f"♪  {format_note(notes_list[current_index])}"
         now_playing_label.configure(text=note_str)
-        mini_now_playing.configure(text=note_str)
     else:
         now_playing_label.configure(text="✅ Done")
-        mini_now_playing.configure(text="✅ Done")
+    
+    # Only update mini widgets when visible
+    if is_mini_mode:
+        mini_progress_bar.set(prog)
+        if current_index < total:
+            mini_now_playing.configure(text=note_str)
+        else:
+            mini_now_playing.configure(text="✅ Done")
 
 def set_sustain(active):
     try:
@@ -255,22 +292,26 @@ def autoplay_loop():
     def run():
         global current_index, stop_flag, is_playing
         if opt_sustain: set_sustain(True)
-            
+        
+        update_counter = 0
         with playback_lock:
             while not stop_flag and current_index < len(notes_list):
-                root.after(0, update_progress)
+                # Throttle UI updates: only every 3rd note or when pausing
+                update_counter += 1
+                if update_counter % 3 == 0 or notes_list[current_index]['type'] == 'pause':
+                    root.after(0, update_progress)
+                
                 play_note(notes_list[current_index])
                 current_index += 1
                 
                 delay = 60 / bpm
                 if opt_humanize:
-                    # Inject realistic rhythm drift (jitter) based on normal human standard deviation
-                    delay *= random.uniform(0.92, 1.08)  
+                    delay *= random.uniform(0.92, 1.08)
                 time.sleep(max(0.005, delay))
                 
             stop_flag = False
             is_playing = False
-            root.after(0, update_progress)
+            root.after(0, lambda: update_progress(force=True))
             root.after(0, update_play_btn_state)
             
             if opt_sustain: set_sustain(False)
